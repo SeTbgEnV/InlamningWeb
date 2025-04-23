@@ -21,9 +21,9 @@ form.addEventListener("submit", async (event) => {
   try {
     const response = await http.post("Products", productData);
 
-      alert("Product added successfully!");
-      form.reset();
-      window.location.href = "../products/products.html";
+    alert("Product added successfully!");
+    form.reset();
+    window.location.href = "../products/products.html";
   } catch (error) {
     alert("Error while adding product!!");
   }

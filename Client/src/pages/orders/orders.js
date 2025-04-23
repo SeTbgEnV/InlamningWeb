@@ -17,6 +17,7 @@ const loadOrders = async () => {
 const createHtml = (order) => {
   const li = document.createElement("li");
   li.classList.add("card");
+  const dateFormat = new Date(order.orderDate).toISOString().split("T")[0];
 
   const orderItemsHtml = order.orderItems.$values
     .map(
@@ -32,6 +33,7 @@ const createHtml = (order) => {
     <h2>OrderId: <span>${order.id}</span></h2>
     <p>Who ordered: <span>${order.firstName + " " + order.lastName}</span></p>
     <p>Email: <span>${order.email}</span></p>
+    <p>Date: <span>${dateFormat}</span></p>
     <br>
     <p>OrderItems: <span>${orderItemsHtml}</span></p>
     <p>Order total: <span>${order.totalPrice}$</span></p>

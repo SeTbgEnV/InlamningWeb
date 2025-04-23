@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./customers.css" />
+    <script type="module" src="./addCustomer.js"></script>
+    <title>Dagnys Bakery</title>
+  </head>
+  <body>
+    <header>
+      <h1>Adding new customer</h1>
+    </header>
+      <main>
+        <form id="add-customer">
+          <label for="firstName">FirstName:</label>
+          <input type="text" id="firstName" name="firstName" required />
+          <br>
+          <label for="lastName">LastName:</label>
+          <input type="text" id="lastName" name="lastName" required />
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required></input>
+          <br>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+          <br>
+            <label for="addressLine">Address:</label>
+            <input type="text" id="addressLine" name="addressLine" required />
+            <br>
+            <label for="postalCode">Postal Code::</label>
+            <input type="text" id="postalCode" name="postalCode" required />
+            <br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required />
+            <br>
+            <label for="addressType">Address Type:</label>
+            <select id="addressType" name="addressType" required>
+              <option value="1">Delivery</option>
+              <option value="2">Billing</option>
+              <option value="3">Distribution</option>
+            </select>
+          <button type="submit" id="submit">Add Customer</button>
+          <button type="button" id="cancel-button">Cancel</button>
+        </form>
+      </main>
+    <footer>
+      <div>
+        <a>Contact</a>
+        <a>Privacy Policy</a>
+        <a>Terms of Service</a>
+        <a>© 2025 Dagnys Bakery</a>
+      </div>
+    </footer>
+  </body>
+</html>

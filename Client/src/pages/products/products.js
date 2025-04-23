@@ -19,6 +19,7 @@ const createHtml = (product) => {
 
   let html = `
     <p>Product: <span>${product.productName}</span></p>
+    <p> Product Id: ${product.id}</p>
     <br>
     <p>Price: <span>${product.price}$</span></p>
     <p>Description: <span>${product.description}</span></p>

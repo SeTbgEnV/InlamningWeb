@@ -28,11 +28,12 @@ export const post = async (url, data) => {
       body: JSON.stringify(data),
     });
 
-    if (!response.ok) {
-      throw new Error(`Error: ${response.status}, ${response.statusText}`);
-    }
-
+    try {
     return await response.json();
+    }catch (error) {
+      console.warn("Package is not Json:", error);
+      return { success: true };
+    }
   } catch (error) {
     console.error("Error posting:", error);
   }
