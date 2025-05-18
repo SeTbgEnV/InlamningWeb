@@ -17,16 +17,16 @@
           <input type="text" id="productName" name="productName" required />
           <br>
           <label for="itemNumber">Item Number:</label>
-          <input type="text" id="itemNumber" name="itemNumber" required />
+          <input type="text" id="itemNumber" name="itemNumber" min="6" maxlength="6" required />
           <br>
           <label for="description">Description:</label>
-          <textarea id="description" name="description" required></textarea>
+          <textarea id="description" name="description" maxlength="50" required></textarea>
           <br>
           <label for="price">Price:</label>
-          <input type="number" id="price" name="price" required />
+          <input type="number" id="price" min="1" name="price" required />
           <br>
           <label for="quantityInpack">Quantity in pack:</label>
-          <input type="number" id="quantityInpack" name="quantityInpack" required />
+          <input type="number" id="quantityInpack" min="1" name="quantityInpack" required />
           <br>
           <label for="weight">Weight (KG):</label>
           <input type="number" id="weight" name="weight" required />

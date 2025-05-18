@@ -26,7 +26,7 @@ form.addEventListener("submit", async (event) => {
 
   try {
     await http.patch(`Products/${productId}`, updateProduct);
-    window.location.href = "../products/products.html";
+    window.location.href = "../products.html";
   } catch (error) {
     console.error("Failed to update product:", error);
   }
@@ -35,7 +35,7 @@ form.addEventListener("submit", async (event) => {
 const cancelButton = document.querySelector("#cancel-button");
 cancelButton.addEventListener("click", (event) => {
   event.preventDefault();
-  window.location.href = "../products/products.html";
+  window.location.href = "./products.html";
 });
 
 

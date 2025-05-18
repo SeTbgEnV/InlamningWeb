@@ -31,13 +31,14 @@ export const post = async (url, data) => {
     try {
     return await response.json();
     }catch (error) {
-      console.warn("Package is not Json:", error);
+      // console.warn("Package is not Json:", error);
       return { success: true };
     }
   } catch (error) {
     console.error("Error posting:", error);
   }
 }
+
 
 export const patch = async (url, data) => {
   try {

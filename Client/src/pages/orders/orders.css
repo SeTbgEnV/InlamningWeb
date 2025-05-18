@@ -16,6 +16,7 @@
     grid-column: span 4;
     cursor: pointer;
 }
+
 fieldset {
     display: grid;
     gap: 1rem;

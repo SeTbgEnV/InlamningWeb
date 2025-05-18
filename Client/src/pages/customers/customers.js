@@ -6,12 +6,13 @@ const initApp = () => {
   loadCustomers();
 };
 
-const loadCustomers = async () => {
+ const loadCustomers = async () => {
   const result = await http.get("Customers");
   result.data.$values.forEach((customer) => {
     customerlist.appendChild(createHtml(customer));
   });
 };
+
 
 const createHtml = (customer) => {
   const li = document.createElement("li");

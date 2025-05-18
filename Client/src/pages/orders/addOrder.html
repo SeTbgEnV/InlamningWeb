@@ -15,27 +15,25 @@
         <form id="add-order">
         <fieldset>
             <legend>Customer Information</legend>
-            <label for="customerName">Customer Name:</label>
-            <input type="text" id="customerName" name="customerName" required />
-            <br />
-            <label for="customerId">Customer ID:</label>
-            <input type="number" id="customerId" name="customerId" required />
+            <select id="customerlist" name="customerlist" required>
+              <option value="" disabled selected >Select customer</option>
+            </select>
             <br />
         </fieldset>
         <fieldset>
-            <legend>Product Information</legend>
-                <label for="productName">Product Name:</label>
-                <input type="text" id="productName" name="productName" required />
+            <legend>Order Information</legend>
+                <label for="productlist">Products:</label>
+                <select id="productlist" name="productlist" required>
+                <option value="" disabled selected>Select product</option>
+                </select>
                 <br />
-                <label for="productId">Product ID:</label>
-                <input type="number" id="productId" name="productId" required />
                 <label for="price">Price:</label>
                 <input type="number" id="price" name="price" required />
                 <br />
                 <label for="quantity">Quantity:</label>
                 <input type="number" id="quantity" name="quantity" required />
            </fieldset>
-         <button type="submit">Create Order</button>
+         <button type="submit" id="add-order">Create Order</button>
          <button type="button" id="cancel-button">Cancel Order</button>
         </form>
       </main>
